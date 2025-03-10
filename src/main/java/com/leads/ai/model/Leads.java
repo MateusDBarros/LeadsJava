@@ -12,7 +12,7 @@ public class Leads {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @NotBlank(message = "Nome é obrigatório")
     private String nome;
@@ -27,7 +27,7 @@ public class Leads {
     public Leads() {
     }
 
-    public Leads(int id, String nome, String email, String proposta) {
+    public Leads(long id, String nome, String email, String proposta) {
         this.id = id;
         this.proposta = proposta;
         this.email = email;
